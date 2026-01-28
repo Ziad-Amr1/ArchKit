@@ -1,4 +1,23 @@
-.slick-dots li button:before {
-    color: #000;
+@import 'tailwindcss';
+
+
+:root {
+    /* Backgrounds */
+    --bg-main: #fef9f3;
+    --bg-surface: #ffffff;
+    
+    /* Text */
+    --text-primary: #414042;
+    --text-secondary: #77706a;
+    
+    /* Borders */
+    --border-light: #d8d7d4;
+    
+    /* Accent (Tech) */
+    --accent-primary: #0d1b2a;
+    --accent-secondary: #778da9;
   }
-  
+
+    .slick-dots li button:before {
+    color: var(--text-primary);
+    }
