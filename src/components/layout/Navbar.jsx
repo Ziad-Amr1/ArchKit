@@ -1,6 +1,6 @@
 function Navbar() {
     return (
-      <nav className="w-full border-b border-gray-200 bg-white">
+      <nav className="w-full border-b border-gray-200 bg-white border-b-2 border-gray-400">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
           <h1 className="text-2xl font-semibold tracking-wide">
             ArchKit
