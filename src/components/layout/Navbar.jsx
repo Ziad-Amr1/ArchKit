@@ -1,8 +1,8 @@
 function Navbar() {
     return (
-      <nav className="w-full border-b border-gray-200 bg-white border-b-2 border-gray-400">
+      <nav className="w-full bg-[var(--bg-surface)] border-b border-[var(--border-light)]">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-          <h1 className="text-2xl font-semibold tracking-wide">
+          <h1 className="text-2xl font-semibold tracking-wide text-[var(--text-primary)]">
             ArchKit
           </h1>
   
@@ -10,7 +10,7 @@ function Navbar() {
             <li>
               <a
                 href="/"
-                className="text-gray-700 hover:text-black transition"
+                className="text-[var(--text-secondary)] hover:text-[var(--accent-primary)] transition"
               >
                 Home
               </a>
@@ -19,7 +19,7 @@ function Navbar() {
             <li>
               <a
                 href="/products"
-                className="text-gray-700 hover:text-black transition"
+                className="text-[var(--text-secondary)] hover:text-[var(--accent-primary)] transition"
               >
                 Products
               </a>
@@ -28,7 +28,7 @@ function Navbar() {
             <li>
               <a
                 href="/contact"
-                className="text-gray-700 hover:text-black transition"
+                className="text-[var(--text-secondary)] hover:text-[var(--accent-primary)] transition"
               >
                 Contact
               </a>

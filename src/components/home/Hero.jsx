@@ -12,20 +12,23 @@ function Hero() {
   }
 
   return (
-    <section className="w-full bg-gray-100">
+    <section className="w-full bg-[var(--bg-main)]">
       <Slider {...settings}>
         {products.map((item) => (
           <div key={item.id}>
             <div className="h-[60vh] flex flex-col items-center justify-center text-center px-6">
-              <h1 className="text-4xl md:text-5xl font-semibold mb-4">
+              <h1 className="text-4xl md:text-5xl font-semibold mb-4 text-[var(--text-primary)]">
                 {item.title}
               </h1>
 
-              <p className="text-gray-600 text-lg mb-6">
-                Starting from <span className="font-medium">${item.price}</span>
+              <p className="text-[var(--text-secondary)] text-lg mb-6">
+                Starting from{" "}
+                <span className="font-medium text-[var(--text-primary)]">
+                  ${item.price}
+                </span>
               </p>
 
-              <button className="border border-gray-800 text-gray-800 px-6 py-2 text-sm uppercase tracking-wide hover:bg-gray-800 hover:text-white transition">
+              <button className="border border-[var(--accent-primary)] text-[var(--accent-primary)] px-6 py-2 text-sm uppercase tracking-wide hover:bg-[var(--accent-primary)] hover:text-white transition">
                 View Kit
               </button>
             </div>
